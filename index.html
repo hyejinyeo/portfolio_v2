@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyejin Yeo - Développeuse Web</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+    <!-- Iconscout Unicons & Boxicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- ========================= HEADER (NAV) ========================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <a href="#"><img src="assets/img/logo.png" alt="logo" class="nav__logo hidden"></a> -->
+            <!-- <a href="#"><i class='bx bx-home-heart'></i></a> -->
+            <div class="nav__left">
+                <img src="assets/img/icon_bulb.png" alt="bulb icon" class="message__icon">
+                <span class="message__text">Actuellement disponible<br> pour toutes collaborations et offres</span>
+            </div>
+            
+            <!-- <a href="#"><img src="assets/img/icon_home.png" alt="home icon" class="home__icon"></a> -->
+            <div class="nav__right">
+                <!-- ******************** Language Switch Button ******************** -->
+                <!-- <p class="switch--language">EN</p> -->
+                <!-- ******************** Theme Switch Button ******************** -->
+                <!-- <i class="uil uil-moon switch--theme" id="theme-button"></i> -->
+                <!-- <i class="uil uil-sun"></i> -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list" id="nav-ul">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <span aria-hidden="true">00</span>
+                                ACCUEIL
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#propos" class="nav__link">
+                                <span aria-hidden="true">01</span>
+                                À PROPOS
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <span aria-hidden="true">02</span>
+                                COMPÉTENCES
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <span aria-hidden="true">03</span>
+                                PORTFOLIO
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <span aria-hidden="true">04</span>
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <!-- <i class="uil uil-bars"></i> -->
+                        <img src="./assets/img/icon_burger.png" alt="navigation menu icon" class="nav__icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========================= MAIN ========================= -->
+    <main class="main">
+        <!-- ******************** ACCUEIL ******************** -->
+        <section class="home section" id="home">
+            <div class="container home__container">
+                <div class="home__container--top">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/hyejin-yeo" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/hyejinyeo" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="assets/pdf/hyejin_diplome.pdf" target="_blank" class="home__social-icon">
+                            <i class="uil uil-graduation-cap"></i>
+                        </a>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            <span class="text--transparent--outline">BONJOUR, JE M'APPELE</span>
+                        </h1>
+                        <a href="#"><img src="assets/img/logo_bright.png" alt="logo" class="home__logo"></a>
+                        <p class="underline--wavy">Je suis développeuse web basé à Paris et la région Île-de-France.</p>
+                        <!-- <p><i class='bx bx-search-alt'></i> voir mes projets</p>
+                        <p><i class='bx bx-plus'></i> en savoir plus</p> -->
+                        
+                        <div class="home__image">
+                            <img src="./assets/img/home_illustration_bright.png" alt="woman illustration">
+                            <img src="./assets/img/icon_sparkle1.png" alt="image" class="sparkle image__sparkle1--1" data-value="-0.02">
+                            <img src="./assets/img/icon_sparkle1.png" alt="image" class="sparkle image__sparkle1--2" data-value="0.04">
+                            <img src="./assets/img/icon_sparkle1.png" alt="image" class="sparkle image__sparkle1--3" data-value="-0.03">
+                            <img src="./assets/img/icon_sparkle2.png" alt="image" class="sparkle image__sparkle2--1">
+                            <img src="./assets/img/icon_sparkle2.png" alt="image" class="sparkle image__sparkle2--2" data-value="-0.03">
+                            <img src="./assets/img/icon_sparkle3.png" alt="image" class="sparkle image__sparkle3--1">
+                            <img src="./assets/img/icon_sparkle3.png" alt="image" class="sparkle image__sparkle3--2">
+                            <img src="./assets/img/icon_sparkle4.png" alt="image" class="sparkle image__sparkle4--1">
+                        </div>
+                    </div>
+                    <div class="home__footer">
+                        <p class="footer__text">&#169; 2022 v.2</p>
+                    </div>
+                </div>
+                <div class="home__container--bottom">
+                    <ul class="menu__list">
+                        <li class="menu__list--item">
+                            <a href="about.html" class="list--link">
+                                <span aria-hidden="true" class="list--number text--transparent--outline">01</span>
+                                <span class="list--text">À PROPOS</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="#" class="list--link">
+                                <span aria-hidden="true" class="list--number text--transparent--outline">02</span>
+                                <span class="list--text">COMPÉTENCES</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="#" class="list--link">
+                                <span aria-hidden="true" class="list--number text--transparent--outline">03</span>
+                                <span class="list--text">PROJETS</span>
+                            </a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a href="#" class="list--link">
+                                <span aria-hidden="true" class="list--number text--transparent--outline">04</span>
+                                
+                                <span class="list--text">CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            
+        </section>
+        <!-- ******************** À PROPOS ******************** -->
+        <!-- <section class="propos section" id="propos">
+            <div class="container propos__container">
+                propos
+            </div>
+        </section> -->
+        <!-- ******************** COMPÉTENCES ******************** -->
+        <!-- <section class="skills section" id="skills">
+            <div class="container skills__container">
+                skills
+            </div>
+        </section> -->
+        <!-- ******************** PORTFOLIO ******************** -->
+        <!-- <section class="portfolio section" id="portfolio">
+            <div class="container portfolio__container">
+                projects
+            </div>
+        </section> -->
+        <!-- ******************** CONTACT ******************** -->
+        <!-- <section class="contact section" id="contact">
+            <div class="container contact__container">
+                contact
+            </div>
+        </section> -->
+    </main>
+    <!-- ========================= FOOTER ========================= -->
+    <!-- <footer>
+        <div class="container footer__container">
+            <p class="footer__text">&#169; 2022 Hyejin Yeo</p>
+            <p class="footer__text footer__text--alert">Site en cours de construction. La version finale sera mise en ligne prochainement.</p>
+        </div>
+    </footer> -->
+
+    <!-- ******************** SCRIPT ********************-->
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
