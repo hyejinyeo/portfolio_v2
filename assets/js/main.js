@@ -7,10 +7,10 @@ const hamburger = document.getElementById('nav-toggle'),
 
 hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show');
-    if (navIcon.src.match('./assets/img/icon_burger.png')){
-        navIcon.src = './assets/img/icon_close.png'
+    if (navIcon.src.match('./assets/img/icon_burger.PNG')){
+        navIcon.src = './assets/img/icon_close.PNG'
     } else {
-        navIcon.src = './assets/img/icon_burger.png'
+        navIcon.src = './assets/img/icon_burger.PNG'
     };
 })
 
