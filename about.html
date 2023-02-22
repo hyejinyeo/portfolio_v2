@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hyejin Yeo - Développeuse Web</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    a propos
+   <header class="header" id="header">
+        <!-- Page Transition Animation -->
+        <div class="preloader"></div>
+        <!-- Nav Area -->
+        <nav class="nav container">
+            <a href="./index.html"><img src="./assets/img/logo_bright.png" alt="logo" class="nav__logo"></a>
+            <div class="nav__right">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list" id="nav-ul">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <span aria-hidden="true">00</span>
+                                ACCUEIL
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#propos" class="nav__link">
+                                <span aria-hidden="true">01</span>
+                                À PROPOS
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <span aria-hidden="true">02</span>
+                                COMPÉTENCES
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <span aria-hidden="true">03</span>
+                                PORTFOLIO
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <span aria-hidden="true">04</span>
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <img src="./assets/img/icon_burger.PNG" alt="navigation menu icon" class="nav__icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="about section" id="about">
+            <div class="container about__container">
+                <p>a propos</p>
+            </div>    
+        </section>
+    </main>
+    <!-- ******************** SCRIPT ********************-->
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -1,11 +1,29 @@
 /* ==================== NAV ==================== */
-// Toggle menu show
+// Toggle menu show & icon switch
 const hamburger = document.getElementById('nav-toggle'),
-      navUl = document.getElementById('nav-ul');
+    navUl = document.getElementById('nav-ul'),
+    navIcon = document.getElementById('nav-icon');
+    
 
 hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show');
+    if (navIcon.src.match('./assets/img/icon_burger.png')){
+        navIcon.src = './assets/img/icon_close.png'
+    } else {
+        navIcon.src = './assets/img/icon_burger.png'
+    };
 })
+
+// Sub pages toggle menu icon switch
+// const navIcon2 = document.getElementById('nav-icon2');
+
+// navIcon2.addEventListener('click', () => {
+//     if (navIcon2.src.match('../img/icon_burger.png')){
+//         navIcon2.src = '../img/icon_close.png'
+//     } else {
+//         navIcon2.src = '../img/icon_burger.png'
+//     };
+// })
 
 // Toggle menu hidden after clicking a nav link
 const navLink = document.querySelectorAll('.nav__link')
@@ -17,28 +35,29 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 // Scroll sections active link
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+// function scrollActive(){
+//     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        const sectionId = current.getAttribute('id')
+//     sections.forEach(current =>{
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.offsetTop - 50;
+//         const sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         }else{
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
 
 
 
 /* ==================== HOME ==================== */
+// Sparkle parallax movement
 document.addEventListener("mousemove", parallax);
 
 function parallax(e){
@@ -50,5 +69,3 @@ function parallax(e){
         move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)"
     });
 }
-
-
